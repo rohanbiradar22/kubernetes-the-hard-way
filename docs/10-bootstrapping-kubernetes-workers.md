@@ -309,6 +309,17 @@ Output will be similar to
 NAME       STATUS     ROLES    AGE   VERSION
 node01     NotReady   <none>   93s   v1.28.4
 ```
+On controlplane01 Set KUBECONFIG or copy the working config:
+
+```bash
+export KUBECONFIG=~/admin.kubeconfig
+```
+Now we can run following to get the nodes:
+
+```bash
+kubectl get nodes 
+```
+
 
 The node is not ready as we have not yet installed pod networking. This comes later.
 
